@@ -52,18 +52,14 @@
     // 在建立下载操作前,判断连续传入的图片地址是否一样,如果不一样,就把前一个下载操作取消掉
     if (![app.icon isEqualToString:_lastURLString] && _lastURLString != nil) {
         
-        // 取出上一个图片的下载操作,调用cancel方法,取消掉
-        DownloadOperation *lastOP = [self.opCache objectForKey:_lastURLString];
-        [lastOP cancel];
-        
-        // 取消掉的操作,需要从操作缓存池移除
-        [self.opCache removeObjectForKey:_lastURLString];
+        // 单例接管取消操作
+        [[FDSBWebImageManager sharedManager] cancelLastOperation:_lastURLString];
     }
     
     // 记录上次图片地址
     _lastURLString = app.icon;
     
-    // 单例接管下载操作 : 取消操作失效(稍后进行封装)
+    // 单例接管下载操作
     [[FDSBWebImageManager sharedManager] downloadImageWithURLString:app.icon completion:^(UIImage *image) {
         self.iconImageView.image = image;
     }];

@@ -66,4 +66,14 @@
     [self.queue addOperation:op];
 }
 
+- (void)cancelLastOperation:(NSString *)lastURLString {
+    
+    // 取出上一个图片的下载操作,调用cancel方法,取消掉
+    DownloadOperation *lastOP = [self.opCache objectForKey:lastURLString];
+    [lastOP cancel];
+    
+    // 取消掉的操作,需要从操作缓存池移除
+    [self.opCache removeObjectForKey:lastURLString];
+}
+
 @end
