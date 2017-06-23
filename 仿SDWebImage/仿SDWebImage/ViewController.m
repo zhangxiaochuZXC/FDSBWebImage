@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 #import "APPModel.h"
 #import "YYModel.h"
+#import "FDSBWebImageManager.h"
 
 @interface ViewController ()
 
@@ -62,19 +63,10 @@
     // 记录上次图片地址
     _lastURLString = app.icon;
     
-    // 获取随机的图片地址,交给DownloadOperation去下载
-    DownloadOperation *op = [DownloadOperation downloadOperationWithURLString:app.icon finished:^(UIImage *image) {
+    // 单例接管下载操作 : 取消操作失效(稍后进行封装)
+    [[FDSBWebImageManager sharedManager] downloadImageWithURLString:app.icon completion:^(UIImage *image) {
         self.iconImageView.image = image;
-        
-        // 图片下载结束后,移除对应的下载操作
-        [self.opCache removeObjectForKey:app.icon];
     }];
-    
-    // 把操作添加到操作缓存池
-    [self.opCache setObject:op forKey:app.icon];
-    
-    // 把自定义操作添加到队列
-    [self.queue addOperation:op];
 }
 
 // 获取JSON数据 : 测试DownloadOperation的数据的来源,拿到数据后再去点击屏幕
