@@ -14,7 +14,28 @@
  2.需要图片的回调的代码块
  */
 
+@interface DownloadOperation ()
+
+/// 接受外界传入的图片的地址
+@property (nonatomic, copy) NSString *URLString;
+/// 接受外界传入的回调的代码块
+@property (nonatomic, copy) void(^finishedBlock)(UIImage *image);
+
+@end
+
 @implementation DownloadOperation
+
++ (instancetype)downloadOperationWithURLString:(NSString *)URLString finished:(void (^)(UIImage *))finishedBlock {
+    
+    DownloadOperation *op = [DownloadOperation new];
+    
+    // 记录全局的图片地址
+    op.URLString = URLString;
+    // 记录全局的回调的代码块
+    op.finishedBlock = finishedBlock;
+    
+    return op;
+}
 
 /// 操作的入口方法 : 队列调用操作执行时先经过start方法的过滤,会进入该方法,默认在子线程异步执行的(队列调度操作执行后,才会执行main方法)
 - (void)main {

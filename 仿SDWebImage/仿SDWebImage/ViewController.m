@@ -21,13 +21,11 @@
     // 准备队列
     NSOperationQueue *queue = [NSOperationQueue new];
     
-    // 创建自定义操作
-    DownloadOperation *op = [DownloadOperation new];
+    // 准备图片地址
+    NSString *URLString = @"http://paper.taizhou.com.cn/tzwb/res/1/2/2015-01/20/12/res03_attpic_brief.jpg";
     
-    // 向op中传入图片的地址
-    op.URLString = @"http://paper.taizhou.com.cn/tzwb/res/1/2/2015-01/20/12/res03_attpic_brief.jpg";
-    // 向op中传入用于回到图片对象的代码块
-    [op setFinishedBlock:^(UIImage *image) {
+    // 创建自定义操作
+    DownloadOperation *op = [DownloadOperation downloadOperationWithURLString:URLString finished:^(UIImage *image) {
         NSLog(@"%@ %@",image,[NSThread currentThread]);
     }];
     

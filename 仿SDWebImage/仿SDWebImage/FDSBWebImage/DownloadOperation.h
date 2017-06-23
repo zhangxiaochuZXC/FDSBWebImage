@@ -11,9 +11,13 @@
 
 @interface DownloadOperation : NSOperation
 
-/// 接受外界传入的图片的地址
-@property (nonatomic, copy) NSString *URLString;
-/// 接受外界传入的回调的代码块
-@property (nonatomic, copy) void(^finishedBlock)(UIImage *image);
+/**
+ 创建操作和下载图片的主方法
+
+ @param URLString 图片地址
+ @param finishedBlock 下载完成的回调
+ @return 自定义的下载操作
+ */
++ (instancetype)downloadOperationWithURLString:(NSString *)URLString finished:(void(^)(UIImage *image))finishedBlock;
 
 @end
