@@ -9,12 +9,92 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x4eff;SDWebImage/FDSBWebImage/DownloadOperation.m"
-            timestampString = "519896674.84073"
+            filePath = "&#x4eff;SDWebImage/ViewController.m"
+            timestampString = "519897653.043977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4eff;SDWebImage/ViewController.m"
+            timestampString = "519897647.430437"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4eff;SDWebImage/ViewController.m"
+            timestampString = "519897643.98241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4eff;SDWebImage/ViewController.m"
+            timestampString = "519897998.612882"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4eff;SDWebImage/FDSBWebImage/DownloadOperation.m"
+            timestampString = "519897683.866451"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-main"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4eff;SDWebImage/FDSBWebImage/DownloadOperation.m"
+            timestampString = "519897983.941181"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-main"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,12 +106,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x4eff;SDWebImage/ViewController.m"
-            timestampString = "519896678.001797"
+            timestampString = "519897999.241537"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController viewDidLoad]"
+                  moduleName = "&#x4eff;SDWebImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/itcastteacher/Desktop/FDSBWebImage/%E4%BB%BFSDWebImage/%E4%BB%BFSDWebImage/ViewController.m"
+                  timestampString = "519897999.245021"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__29-[ViewController viewDidLoad]_block_invoke"
+                  moduleName = "&#x4eff;SDWebImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/itcastteacher/Desktop/FDSBWebImage/%E4%BB%BFSDWebImage/%E4%BB%BFSDWebImage/ViewController.m"
+                  timestampString = "519897999.249365"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4eff;SDWebImage/FDSBWebImage/DownloadOperation.m"
+            timestampString = "519898005.081791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "-viewDidLoad"
+            landmarkName = "-main"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
