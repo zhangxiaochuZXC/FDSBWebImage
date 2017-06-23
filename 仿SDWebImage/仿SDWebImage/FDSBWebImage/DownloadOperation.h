@@ -1,16 +1,13 @@
 //
-//  ViewController.h
+//  DownloadOperation.h
 //  仿SDWebImage
 //
 //  Created by itcastteacher on 17/6/23.
 //  Copyright © 2017年 itcastteacher. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
-
+@interface DownloadOperation : NSOperation
 
 @end
-

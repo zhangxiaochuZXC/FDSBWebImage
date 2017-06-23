@@ -13,6 +13,7 @@
 		CE3F258D1EFCF785000A3BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3F258B1EFCF785000A3BD7 /* Main.storyboard */; };
 		CE3F258F1EFCF785000A3BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3F258E1EFCF785000A3BD7 /* Assets.xcassets */; };
 		CE3F25921EFCF785000A3BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3F25901EFCF785000A3BD7 /* LaunchScreen.storyboard */; };
+		CE3F259C1EFCFBA4000A3BD7 /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F259B1EFCFBA4000A3BD7 /* DownloadOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CE3F258E1EFCF785000A3BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3F25911EFCF785000A3BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3F25931EFCF785000A3BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3F259A1EFCFBA4000A3BD7 /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		CE3F259B1EFCFBA4000A3BD7 /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		CE3F25811EFCF785000A3BD7 /* 仿SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				CE3F25991EFCFB88000A3BD7 /* FDSBWebImage */,
 				CE3F25851EFCF785000A3BD7 /* AppDelegate.h */,
 				CE3F25861EFCF785000A3BD7 /* AppDelegate.m */,
 				CE3F25881EFCF785000A3BD7 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				CE3F25831EFCF785000A3BD7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE3F25991EFCFB88000A3BD7 /* FDSBWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F259A1EFCFBA4000A3BD7 /* DownloadOperation.h */,
+				CE3F259B1EFCFBA4000A3BD7 /* DownloadOperation.m */,
+			);
+			path = FDSBWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 				CE3F258A1EFCF785000A3BD7 /* ViewController.m in Sources */,
 				CE3F25871EFCF785000A3BD7 /* AppDelegate.m in Sources */,
 				CE3F25841EFCF785000A3BD7 /* main.m in Sources */,
+				CE3F259C1EFCFBA4000A3BD7 /* DownloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
