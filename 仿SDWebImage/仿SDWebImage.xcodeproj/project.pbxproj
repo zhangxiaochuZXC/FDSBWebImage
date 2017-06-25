@@ -40,6 +40,7 @@
 		CE3F25ED1EFD0B4B000A3BD7 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F25D31EFD0B4B000A3BD7 /* NSObject+YYModel.m */; };
 		CE3F25EE1EFD0B4B000A3BD7 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F25D51EFD0B4B000A3BD7 /* YYClassInfo.m */; };
 		CE3F25F11EFD14AE000A3BD7 /* FDSBWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F25F01EFD14AE000A3BD7 /* FDSBWebImageManager.m */; };
+		CEC92F981EFF530F00E7FEC3 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC92F971EFF530F00E7FEC3 /* NSString+path.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		CE3F25D61EFD0B4B000A3BD7 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		CE3F25EF1EFD14AE000A3BD7 /* FDSBWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSBWebImageManager.h; sourceTree = "<group>"; };
 		CE3F25F01EFD14AE000A3BD7 /* FDSBWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSBWebImageManager.m; sourceTree = "<group>"; };
+		CEC92F961EFF530F00E7FEC3 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
+		CEC92F971EFF530F00E7FEC3 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 		CE3F25991EFCFB88000A3BD7 /* FDSBWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				CEC92F961EFF530F00E7FEC3 /* NSString+path.h */,
+				CEC92F971EFF530F00E7FEC3 /* NSString+path.m */,
 				CE3F259A1EFCFBA4000A3BD7 /* DownloadOperation.h */,
 				CE3F259B1EFCFBA4000A3BD7 /* DownloadOperation.m */,
 				CE3F25EF1EFD14AE000A3BD7 /* FDSBWebImageManager.h */,
@@ -338,6 +343,7 @@
 				CE3F258A1EFCF785000A3BD7 /* ViewController.m in Sources */,
 				CE3F25871EFCF785000A3BD7 /* AppDelegate.m in Sources */,
 				CE3F25DE1EFD0B4B000A3BD7 /* NSData+ImageContentType.m in Sources */,
+				CEC92F981EFF530F00E7FEC3 /* NSString+path.m in Sources */,
 				CE3F25841EFCF785000A3BD7 /* main.m in Sources */,
 				CE3F25DC1EFD0B4B000A3BD7 /* AFURLSessionManager.m in Sources */,
 				CE3F25EE1EFD0B4B000A3BD7 /* YYClassInfo.m in Sources */,

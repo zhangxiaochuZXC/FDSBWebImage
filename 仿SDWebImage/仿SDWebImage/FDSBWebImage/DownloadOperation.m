@@ -45,6 +45,11 @@
     NSData *data = [NSData dataWithContentsOfURL:URL];
     UIImage *image = [UIImage imageWithData:data];
     
+    // 实现沙盒缓存
+    if (image != nil) {
+        [data writeToFile:[self.URLString appendCachePath] atomically:YES];
+    }
+    
     // 模拟网络延迟
     [NSThread sleepForTimeInterval:1.0];
     
