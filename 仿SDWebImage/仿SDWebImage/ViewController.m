@@ -7,11 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "DownloadOperation.h"
 #import "AFNetworking.h"
 #import "APPModel.h"
 #import "YYModel.h"
-#import "FDSBWebImageManager.h"
+#import "UIImageView+WebImage.h"
 
 @interface ViewController ()
 
@@ -49,20 +48,8 @@
     // 获取随机的模型
     APPModel *app = self.appList[random];
     
-    // 在建立下载操作前,判断连续传入的图片地址是否一样,如果不一样,就把前一个下载操作取消掉
-    if (![app.icon isEqualToString:_lastURLString] && _lastURLString != nil) {
-        
-        // 单例接管取消操作
-        [[FDSBWebImageManager sharedManager] cancelLastOperation:_lastURLString];
-    }
-    
-    // 记录上次图片地址
-    _lastURLString = app.icon;
-    
-    // 单例接管下载操作
-    [[FDSBWebImageManager sharedManager] downloadImageWithURLString:app.icon completion:^(UIImage *image) {
-        self.iconImageView.image = image;
-    }];
+    // 分类接管下载
+    [self.iconImageView fdsb_setImageWithURLString:app.icon];
 }
 
 // 获取JSON数据 : 测试DownloadOperation的数据的来源,拿到数据后再去点击屏幕

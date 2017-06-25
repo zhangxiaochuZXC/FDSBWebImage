@@ -41,6 +41,7 @@
 		CE3F25EE1EFD0B4B000A3BD7 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F25D51EFD0B4B000A3BD7 /* YYClassInfo.m */; };
 		CE3F25F11EFD14AE000A3BD7 /* FDSBWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F25F01EFD14AE000A3BD7 /* FDSBWebImageManager.m */; };
 		CEC92F981EFF530F00E7FEC3 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC92F971EFF530F00E7FEC3 /* NSString+path.m */; };
+		CEC92F9D1EFF5A5100E7FEC3 /* UIImageView+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC92F9C1EFF5A5100E7FEC3 /* UIImageView+WebImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,9 @@
 		CE3F25F01EFD14AE000A3BD7 /* FDSBWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSBWebImageManager.m; sourceTree = "<group>"; };
 		CEC92F961EFF530F00E7FEC3 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
 		CEC92F971EFF530F00E7FEC3 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
+		CEC92F991EFF56FA00E7FEC3 /* UIImageView+WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebImage.h"; sourceTree = "<group>"; };
+		CEC92F9A1EFF56FA00E7FEC3 /* UIImageView+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebImage.m"; path = "../../FDSBWebImage/UIImageView+WebImage.m"; sourceTree = "<group>"; };
+		CEC92F9C1EFF5A5100E7FEC3 /* UIImageView+WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 				CE3F259B1EFCFBA4000A3BD7 /* DownloadOperation.m */,
 				CE3F25EF1EFD14AE000A3BD7 /* FDSBWebImageManager.h */,
 				CE3F25F01EFD14AE000A3BD7 /* FDSBWebImageManager.m */,
+				CEC92F991EFF56FA00E7FEC3 /* UIImageView+WebImage.h */,
+				CEC92F9C1EFF5A5100E7FEC3 /* UIImageView+WebImage.m */,
 			);
 			path = FDSBWebImage;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 		CE3F25D11EFD0B4B000A3BD7 /* YYModel */ = {
 			isa = PBXGroup;
 			children = (
+				CEC92F9A1EFF56FA00E7FEC3 /* UIImageView+WebImage.m */,
 				CE3F25D21EFD0B4B000A3BD7 /* NSObject+YYModel.h */,
 				CE3F25D31EFD0B4B000A3BD7 /* NSObject+YYModel.m */,
 				CE3F25D41EFD0B4B000A3BD7 /* YYClassInfo.h */,
@@ -357,6 +364,7 @@
 				CE3F25D81EFD0B4B000A3BD7 /* AFNetworkReachabilityManager.m in Sources */,
 				CE3F25EC1EFD0B4B000A3BD7 /* UIView+WebCacheOperation.m in Sources */,
 				CE3F25D91EFD0B4B000A3BD7 /* AFSecurityPolicy.m in Sources */,
+				CEC92F9D1EFF5A5100E7FEC3 /* UIImageView+WebImage.m in Sources */,
 				CE3F25D71EFD0B4B000A3BD7 /* AFHTTPSessionManager.m in Sources */,
 				CE3F25E21EFD0B4B000A3BD7 /* SDWebImageDownloader.m in Sources */,
 				CE3F25EA1EFD0B4B000A3BD7 /* UIImageView+HighlightedWebCache.m in Sources */,
